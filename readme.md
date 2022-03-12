@@ -111,5 +111,5 @@ $ docker-compose up
 Connect to the database server
 
 ```bash
-$ docker exec -it mysql-container /bin/sh
+$ docker exec -it mysql-mariadb-container /bin/sh
 ```
