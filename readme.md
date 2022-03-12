@@ -107,7 +107,7 @@ $ docker-compose down
 Start docker container
 
 ```bash
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 Connect to the database server
