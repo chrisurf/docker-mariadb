@@ -1,4 +1,4 @@
-# Docker container for MySQL
+# Docker container for a MySQL Database
 
 *This repo got you covered, if you want to quickly set up a mysql database on your machine. All you need is [docker](htttp://docker.com) installed on your machine and you are good to go.*
 
@@ -28,7 +28,7 @@ Btw. the password is *"secret"* for testing purposes. Normally you would not use
 
 Now you again check out the version and so much more. Not again the promt has changed.
 
-```bash
+```mysql
 > SELECT @@version;
 ```
 
@@ -36,19 +36,19 @@ Here are a couple of basic mysql commands to get you going.
 
 Show all database
 
-```bash
+```mysql
 > SHOW DATABASES;
 ```
 
 Connect to database
 
-```bash
+```mysql
 > USE database_name;
 ```
 
 Create database table
 
-```bash
+```mysql
 > CREATE TABLE Persons (
     PersonID int,
     LastName varchar(255),
@@ -58,8 +58,9 @@ Create database table
 );
 ```
 
-*crerate a sample table*
-```bash
+Crerate a sample table
+
+```mysql
 > CREATE TABLE food (
     Id int NOT NULL AUTO_INCREMENT,
     OrderDate varchar(255),
@@ -76,13 +77,13 @@ Create database table
 
 Show all tables in database
 
-```bash
+```mysql
 > SHOW TABLES;
 ```
 
 Show all rows in table
 
-```bash
+```mysql
 > SELECT * FROM table_name;
 ```
 
@@ -110,5 +111,5 @@ $ docker-compose up
 Connect to the database server
 
 ```bash
-docker exec -it mysql_mysql_1 /bin/sh
+$ docker exec -it mysql_mysql_1 /bin/sh
 ```
